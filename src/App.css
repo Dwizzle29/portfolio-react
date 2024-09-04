@@ -221,7 +221,8 @@ div .projects-portfolio-card:hover span {
   margin: 4px;
 }
 .about-container {
-  margin: 10px;
+  margin-inline: 30%;
+  text-align: center;
 }
 
 .contact-info {
