@@ -139,6 +139,9 @@ nav li a::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 .skills-container {
   display: grid;
@@ -216,6 +219,9 @@ div .projects-portfolio-card:hover span {
   max-width: 60%;
   text-align: center;
   margin: 4px;
+}
+.about-container {
+  margin: 10px;
 }
 /* Smaller Screens */
 @media screen and (max-width: 600px) {

@@ -11,7 +11,7 @@ export default function Portfolio() {
             <p>I'm so happy you're here today</p>
           </div>
         </article>
-        <h1>Portfolio section</h1>
+        <h1>My Projects</h1>
         <article className="portfolio-container">
           <div className="projects-portfolio-container">
             <div>
