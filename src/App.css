@@ -223,6 +223,11 @@ div .projects-portfolio-card:hover span {
 .about-container {
   margin: 10px;
 }
+
+.contact-info {
+  text-align: center;
+  font-weight: 500;
+}
 /* Smaller Screens */
 @media screen and (max-width: 600px) {
 }
