@@ -1,0 +1,48 @@
+/* Navigation Bar  */
+nav {
+  border-bottom: 2px solid rgb(47, 55, 89);
+  margin-inline: 40px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin-bottom: 1px;
+}
+nav ul li {
+  margin: 2px;
+  list-style-type: none;
+  text-decoration: none;
+}
+nav li a {
+  padding: 1px 16px;
+  margin: 0;
+  text-decoration: none !important;
+  position: relative; /* Needed for pseudo-elements */
+  color: rgb(47, 55, 89);
+}
+.active {
+  background-color: #77d7d542;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+}
+
+nav li a:hover:not(.active):before {
+  border-color: #79b1e2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+nav li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%; /* This creates the 'half-rectangle' effect */
+  border: 2px solid transparent; /* Invisible by default */
+  border-bottom: 0; /* No bottom border, we already have it */
+  transition: border-color 0.3s ease; /* Smooth transition */
+}

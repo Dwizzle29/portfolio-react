@@ -1,0 +1,30 @@
+.main-card {
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  grid-template-rows: 2fr 2fr;
+  font-size: large;
+}
+.main-card .bubble-effect {
+  border: solid #678db4;
+  border-radius: 10px;
+  background-color: #678db4;
+  padding-inline: 0px;
+  color: antiquewhite;
+  font-weight: 500;
+  padding: 4px;
+}
+.main-content h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 30%;
+  place-content: center;
+}

@@ -1,4 +1,10 @@
 import "./App.css";
+import "./styles/header.css";
+import "./styles/footer.css";
+import "./styles/navbar.css";
+import "./styles/cardComp.css";
+import "./styles/MyPortfolioPage.css";
+import "./styles/aboutPage.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import About from "./Pages/aboutMe.jsx";
@@ -7,6 +13,7 @@ import Skills from "./Pages/MySkills.jsx";
 import Contact from "./Pages/ContactMe.jsx";
 import Navigation from "./components/nav.jsx";
 import Footer from "./components/Footer.jsx";
+
 function App() {
   return (
     <Router>
