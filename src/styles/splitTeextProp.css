@@ -1,13 +1,12 @@
-body {
-  background-color: #e5eaea;
-  height: 100%;
-  color: rgb(47, 55, 89);
-  font-size: 32px;
-}
-
 /* Smaller Screens */
 @media screen and (max-width: 600px) {
 }
 /* Larger Screens  */
 @media screen and (min-width: 900px) {
+  .split-text-area {
+    margin-top: 20px;
+    text-align: center;
+    font-size: large;
+    z-index: 10;
+  }
 }

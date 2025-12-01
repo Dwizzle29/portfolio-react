@@ -4,14 +4,18 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.17",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.13.0",
+    "ogl": "^1.0.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "tailwindcss": "^4.1.17",
+    "three": "^0.181.2",
     "vite": "^7.2.2",
     "web-vitals": "^2.1.4"
   },
@@ -40,6 +44,13 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
     "react-router-dom": "^6.26.1"
+  },
+  "overrides": {
+    "nth-check": "2.1.1",
+    "postcss": "8.4.31",
+    "resolve-url-loader": "5.0.0"
   }
 }

@@ -1,77 +1,357 @@
-/* Portfolio Page*/
-.portfolio-container {
-  display: grid;
-  grid-template-columns: 35% 35% 35%;
-  place-content: center;
-  width: 100%;
-}
-.projects-portfolio-container {
-  background-color: rgba(46, 110, 248, 0.665);
-  border-radius: 20px;
-  margin: 10%;
-  box-sizing: border-box;
-}
-div .projects-portfolio-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.projects-portfolio-card span {
-  display: none;
-}
-div .projects-portfolio-card:hover span {
-  display: block;
-  position: relative;
-}
+/* Smaller Screens */
+@media screen and (max-width: 600px) {
+  /* Portfolio Page */
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .projects-portfolio-container {
+    background-color: rgba(46, 110, 248, 0.665);
+    border-radius: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+  }
+  div .projects-portfolio-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 250px;
+  }
+  .projects-portfolio-card span {
+    display: none;
+  }
+  div .projects-portfolio-card:active span {
+    display: block;
+    position: relative;
+  }
 
-.projects-portfolio-card img {
-  margin-block: 20px;
-  width: 80%;
-  max-width: 80%;
+  .projects-portfolio-card img {
+    margin-block: 15px;
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
 
-  height: auto;
-  border-radius: 20px;
-  transition: all 0.5s ease-in-out;
-}
+  .projects-portfolio-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 110, 248, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 15px;
+    color: wheat;
+    padding: 10px;
+  }
+  .projects-portfolio-info:active {
+    opacity: 1;
+  }
+  .projects-portfolio-info p a {
+    padding: 8px 12px;
+    border: 2px solid rgb(247, 237, 219);
+    text-decoration: none !important;
+    color: wheat;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  .projects-portfolio-info p a:active {
+    background-color: rgb(247, 237, 219);
+    color: #678db4;
+  }
+  .projects-portfolio-info p {
+    max-width: 90%;
+    text-align: center;
+    margin: 6px;
+    font-size: 14px;
+  }
 
-.projects-portfolio-info {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: rgba(46, 110, 248);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 0.6s;
-  border-radius: 20px;
-  color: wheat;
-}
-.projects-portfolio-info:hover {
-  opacity: 1;
-}
-.projects-portfolio-info p a {
-  padding: 5px;
-  border: 2px solid rgb(247, 237, 219);
-  text-decoration: none !important;
-  color: wheat;
-}
-.projects-portfolio-info p a:hover {
-  background-color: rgb(247, 237, 219);
-  color: #678db4;
-}
-.projects-portfolio-info p {
-  max-width: 60%;
-  text-align: center;
-  margin: 4px;
-}
+  .contact-info {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+  }
 
-.contact-info {
-  text-align: center;
-  font-weight: 500;
+  /* LiquidEther overlay helpers - Mobile */
+  .liquid-ether-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    color: #e5eaea;
+  }
+  .liquid-ether-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-color: #e5eaea;
+    opacity: 0.8;
+  }
+  .liquid-overlay h2 {
+    align-self: end;
+  }
+  .text-area {
+    align-self: start;
+  }
+  .liquid-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    pointer-events: auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: inset -1px -20px 3px 0px #e5eaea;
+  }
+}
+/* Medium Screens (Tablets) */
+@media screen and (min-width: 601px) and (max-width: 899px) {
+  /* Portfolio Page */
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .projects-portfolio-container {
+    background-color: rgba(46, 110, 248, 0.665);
+    border-radius: 18px;
+    margin: 12px;
+    box-sizing: border-box;
+  }
+  div .projects-portfolio-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .projects-portfolio-card span {
+    display: none;
+  }
+  div .projects-portfolio-card:hover span {
+    display: block;
+    position: relative;
+  }
+
+  .projects-portfolio-card img {
+    margin-block: 18px;
+    width: 85%;
+    max-width: 85%;
+    height: auto;
+    border-radius: 18px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .projects-portfolio-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 110, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 18px;
+    color: wheat;
+  }
+  .projects-portfolio-info:hover {
+    opacity: 1;
+  }
+  .projects-portfolio-info p a {
+    padding: 6px 10px;
+    border: 2px solid rgb(247, 237, 219);
+    text-decoration: none !important;
+    color: wheat;
+    font-size: 13px;
+  }
+  .projects-portfolio-info p a:hover {
+    background-color: rgb(247, 237, 219);
+    color: #678db4;
+  }
+  .projects-portfolio-info p {
+    max-width: 70%;
+    text-align: center;
+    margin: 5px;
+    font-size: 13px;
+  }
+
+  .contact-info {
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  /* LiquidEther overlay helpers - Tablet */
+  .liquid-ether-wrapper {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    color: #e5eaea;
+  }
+  .liquid-ether-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-color: #e5eaea;
+    opacity: 0.8;
+  }
+  .liquid-overlay h2 {
+    margin-top: 8%;
+    font-size: 24px;
+  }
+  .text-area {
+    margin-bottom: 18%;
+  }
+  .liquid-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    pointer-events: auto;
+    text-align: center;
+    box-shadow: inset -1px -20px 3px 0px #e5eaea;
+  }
+}
+/* Larger Screens  */
+@media screen and (min-width: 900px) {
+  /* Portfolio Page*/
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    place-content: center;
+    width: 100%;
+  }
+  .projects-portfolio-container {
+    background-color: rgba(46, 110, 248, 0.665);
+    border-radius: 20px;
+    margin: 10%;
+    box-sizing: border-box;
+  }
+  div .projects-portfolio-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .projects-portfolio-card span {
+    display: none;
+  }
+  div .projects-portfolio-card:hover span {
+    display: block;
+    position: relative;
+  }
+
+  .projects-portfolio-card img {
+    margin-block: 20px;
+    width: 80%;
+    max-width: 80%;
+
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .projects-portfolio-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(46, 110, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 20px;
+    color: wheat;
+  }
+  .projects-portfolio-info:hover {
+    opacity: 1;
+  }
+  .projects-portfolio-info p a {
+    padding: 5px;
+    border: 2px solid rgb(247, 237, 219);
+    text-decoration: none !important;
+    color: wheat;
+  }
+  .projects-portfolio-info p a:hover {
+    background-color: rgb(247, 237, 219);
+    color: #678db4;
+  }
+  .projects-portfolio-info p {
+    max-width: 60%;
+    text-align: center;
+    margin: 4px;
+  }
+
+  .contact-info {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* LiquidEther overlay helpers */
+  .liquid-ether-wrapper {
+    position: relative;
+    width: 100%;
+    height: 102vh;
+    overflow: hidden;
+    color: #e5eaea;
+  }
+  .liquid-ether-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none; /* let pointer events pass to overlay if you want clickable content */
+    background-color: #e5eaea;
+    opacity: 0.8;
+  }
+  .liquid-overlay h2 {
+    align-self: end;
+  }
+  .text-area {
+    align-self: start;
+  }
+  .liquid-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    pointer-events: auto;
+    text-align: center;
+    -moz-box-shadow: inset 0px 850px 500px -500px #fff;
+    -webkit-box-shadow: inset 0px 850px 500px -500px #fff;
+    -o-box-shadow: inset 0px 850px 500px -500px #fff;
+    box-shadow: inset -1px -20px 3px 0px #e5eaea;
+  }
 }

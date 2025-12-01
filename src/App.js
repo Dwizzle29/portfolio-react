@@ -1,7 +1,7 @@
 import "./App.css";
 import "./styles/header.css";
 import "./styles/footer.css";
-import "./styles/navbar.css";
+// import "./styles/navbar.css";
 import "./styles/cardComp.css";
 import "./styles/MyPortfolioPage.css";
 import "./styles/aboutPage.css";
@@ -18,11 +18,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
-        <Navigation /> {/* Component nav.jsx*/}
+        <Navigation />
         <Routes>
-          {/* Routing to different pages*/}
-
           <Route path="/about" element={<About />}></Route>
           <Route path="/" element={<Portfolio />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
