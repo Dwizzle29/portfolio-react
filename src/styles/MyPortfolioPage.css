@@ -104,6 +104,7 @@
   }
   .text-area {
     align-self: start;
+    font-size: 42px;
   }
   .liquid-overlay {
     position: absolute;
@@ -223,6 +224,7 @@
   }
   .text-area {
     margin-bottom: 18%;
+    font-size: 42px;
   }
   .liquid-overlay {
     position: absolute;
@@ -335,9 +337,17 @@
   }
   .liquid-overlay h2 {
     align-self: end;
+    font-weight: lighter;
   }
   .text-area {
-    align-self: start;
+    align-self: centre;
+    font-size: 100px;
+    font-weight: 500;
+  }
+  .text-area h2 {
+    align-self: centre;
+    font-size: 90px;
+    margin-block: 0;
   }
   .liquid-overlay {
     position: absolute;
@@ -345,7 +355,7 @@
     z-index: 5;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     place-items: center;
     pointer-events: auto;
     text-align: center;
@@ -353,5 +363,16 @@
     -webkit-box-shadow: inset 0px 850px 500px -500px #fff;
     -o-box-shadow: inset 0px 850px 500px -500px #fff;
     box-shadow: inset -1px -20px 3px 0px #e5eaea;
+  }
+  .rotating-text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+    align-items: center;
+    column-gap: 10px;
+    transform-origin: 50% 50% 0px;
+    transform: none;
+    align-self: first baseline;
   }
 }
