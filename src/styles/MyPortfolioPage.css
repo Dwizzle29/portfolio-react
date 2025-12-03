@@ -244,11 +244,11 @@
   /* Portfolio Page*/
   .portfolio-container {
     display: grid;
-    grid-template-columns: 35% 35% 35%;
+    grid-template-columns: auto;
     place-content: center;
     width: 100%;
   }
-  .projects-portfolio-container {
+  .projects-portfolio-card {
     background-color: rgba(46, 110, 248, 0.665);
     border-radius: 20px;
     margin: 10%;

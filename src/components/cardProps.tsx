@@ -1,21 +1,21 @@
 export const Title = ({ text }: { text: string }) => {
-  return <h1 className="title">{text}</h1>;
+  return <h1 className="title projects-portfolio-info">{text}</h1>;
 };
 
 export const Subtitle = ({ text }: { text: string }) => {
-  return <h3 className="subtitle-3">{text}</h3>;
+  return <h3 className="subtitle-3 projects-portfolio-info">{text}</h3>;
 };
 
 export const Description = ({ text }: { text: string }) => {
-  return <p className="description">{text}</p>;
+  return <p className="description projects-portfolio-info">{text}</p>;
 };
 
 export const OverlayDescription = ({ text }: { text: string }) => {
-  return <p className="overlayedDescription">{text}</p>;
+  return <p className="overlayedDescription projects-portfolio-info">{text}</p>;
 };
 
 export const technologies = ({ text }: { text: string }) => {
-  return <p className="technologies">{text}</p>;
+  return <p className="technologies projects-portfolio-info">{text}</p>;
 };
 
 export const ImageSrc = ({ imageSrc }: { imageSrc: string }) => {

@@ -8,7 +8,6 @@ import LiquidEther from "../components/liquidEther.tsx";
 import Plasma from "../components/Plasma.tsx";
 import SplitText from "../components/SplitTextProps.tsx";
 import Iridescence from "../components/Iridescence.tsx";
-import RotatingText from "../components/RoatatingTextProp.tsx";
 import ScrollReveal from "../components/ScrollRevealProp.tsx";
 
 export default function Portfolio() {
@@ -56,44 +55,17 @@ export default function Portfolio() {
           blurStrength={10}
           rotationEnd="bottom bottom"
         >
-          <div className="rotating-text-container">
-            <h1>Bridging: </h1>
-            <div className="rotating-text-wrapper">
-              <RotatingText
-                texts={[
-                  "Logic with Empathy",
-                  "Form with Function",
-                  "Data with Design",
-                  "People with Platforms",
-                ]}
-                mainClassName="rotating-text-main"
-                staggerFrom={"first"}
-                initial={{ y: "100%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: "-120%", opacity: 0 }}
-                staggerDuration={0.04}
-                animatePresenceMode="wait"
-                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                transition={{
-                  type: "spring",
-                  damping: 20,
-                  stiffness: 300,
-                  mass: 1,
-                }}
-                rotationInterval={3000}
-              />
-            </div>
-          </div>
-
           <h1>Featured Work</h1>
           <article className="portfolio-container">
             <div className="projects-portfolio-container">
-              <Card
-                image={screenjot}
-                title="ScreenJot"
-                description="A note-taking app that allows users to capture screenshots and annotate them with text, drawings, and highlights."
-                link="https://screenjot.app/"
-              />
+              <div>
+                <Card
+                  image={screenjot}
+                  title="ScreenJot"
+                  description="A note-taking app that allows users to capture screenshots and annotate them with text, drawings, and highlights."
+                  link="https://screenjot.app/"
+                />
+              </div>
               <Card
                 image={mikaylascorner}
                 title="Mikayla's Corner"
