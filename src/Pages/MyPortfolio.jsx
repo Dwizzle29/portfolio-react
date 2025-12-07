@@ -1,4 +1,6 @@
 import screenjot from "../assets/screenjot.png";
+import ArdiunoBoard from "../assets/ArdiunoBoard.jpeg";
+import smartCoasterWithFriends from "../assets/smartCoasterWithFriends.png";
 import mikaylascorner from "../assets/mikaylascorner.png";
 import teamjacobvolleyball from "../assets/teamjacobvolleyball.png";
 import harmonivinyls from "../assets/harmonivinyls.png";
@@ -49,23 +51,27 @@ export default function Portfolio() {
         </div>
 
         <ScrollReveal
-          baseOpacity={100}
+          baseOpacity={90}
           enableBlur={true}
           baseRotation={0}
-          blurStrength={10}
-          rotationEnd="bottom bottom"
+          blurStrength={1}
+          rotationEnd="top bottom"
         >
           <h1>Featured Work</h1>
           <article className="portfolio-container">
             <div className="projects-portfolio-container">
-              <div>
-                <Card
-                  image={screenjot}
-                  title="ScreenJot"
-                  description="A note-taking app that allows users to capture screenshots and annotate them with text, drawings, and highlights."
-                  link="https://screenjot.app/"
-                />
-              </div>
+              <Card
+                image={smartCoasterWithFriends}
+                title="Smart Coaster With Friends"
+                description="An IoT-enabled smart coaster system for friends to track water consumption, receive reminders, and interact via Discord."
+                link="SCWFPage"
+              />
+              <Card
+                image={screenjot}
+                title="ScreenJot"
+                description="A note-taking app that allows users to capture screenshots and annotate them with text, drawings, and highlights."
+                link="https://screenjot.app/"
+              />
               <Card
                 image={mikaylascorner}
                 title="Mikayla's Corner"

@@ -74,4 +74,207 @@
     grid-template-columns: 30%;
     place-content: center;
   }
+
+  /* Portfolio Page - Card Hover Overlay */
+  .projects-portfolio-card {
+    position: relative;
+    background-color: rgba(46, 110, 248, 0.665);
+    border-radius: 20px;
+    margin: 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects-portfolio-card img {
+    margin-block: 20px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .projects-portfolio-info {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(46, 110, 248, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    pointer-events: none;
+    padding: 20px;
+  }
+
+  .projects-portfolio-card:hover .projects-portfolio-info {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .projects-portfolio-info > * {
+    color: wheat;
+    text-align: center;
+  }
+
+  .projects-portfolio-info p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .projects-portfolio-info a {
+    padding: 10px 20px;
+    border: 2px solid rgb(247, 237, 219);
+    text-decoration: none !important;
+    color: wheat;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  .projects-portfolio-info a:hover {
+    background-color: rgb(247, 237, 219);
+    color: #678db4;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* Portfolio Page*/
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    width: 100%;
+  }
+  .projects-portfolio-card {
+    background-color: rgba(46, 110, 248, 0.665);
+    border-radius: 20px;
+    margin: 10%;
+    box-sizing: border-box;
+  }
+  div .projects-portfolio-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .projects-portfolio-card span {
+    display: none;
+  }
+  div .projects-portfolio-card:hover span {
+    display: block;
+    position: relative;
+  }
+
+  .projects-portfolio-card img {
+    margin-block: 20px;
+    width: 80%;
+    max-width: 80%;
+
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .projects-portfolio-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(46, 110, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 20px;
+    color: wheat;
+  }
+  .projects-portfolio-info:hover {
+    opacity: 1;
+  }
+  .projects-portfolio-info p a {
+    padding: 5px;
+    border: 2px solid rgb(247, 237, 219);
+    text-decoration: none !important;
+    color: wheat;
+  }
+  .projects-portfolio-info p a:hover {
+    background-color: rgb(247, 237, 219);
+    color: #678db4;
+  }
+  .projects-portfolio-info p {
+    max-width: 60%;
+    text-align: center;
+    margin: 4px;
+  }
+
+  .contact-info {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* LiquidEther overlay helpers */
+  .liquid-ether-wrapper {
+    position: relative;
+    width: 100%;
+    height: 102vh;
+    overflow: hidden;
+    color: #e5eaea;
+  }
+  .liquid-ether-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none; /* let pointer events pass to overlay if you want clickable content */
+    background-color: #e5eaea;
+    opacity: 0.8;
+  }
+  .liquid-overlay h2 {
+    align-self: end;
+    font-weight: lighter;
+  }
+  .text-area {
+    align-self: centre;
+    font-size: 100px;
+    font-weight: 500;
+  }
+  .text-area h2 {
+    align-self: centre;
+    font-size: 90px;
+    margin-block: 0;
+  }
+  .liquid-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    pointer-events: auto;
+    text-align: center;
+    -moz-box-shadow: inset 0px 850px 500px -500px #fff;
+    -webkit-box-shadow: inset 0px 850px 500px -500px #fff;
+    -o-box-shadow: inset 0px 850px 500px -500px #fff;
+    box-shadow: inset -1px -20px 3px 0px #e5eaea;
+  }
+  .rotating-text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+    align-items: center;
+    column-gap: 10px;
+    transform-origin: 50% 50% 0px;
+    transform: none;
+    align-self: first baseline;
+  }
 }

@@ -13,6 +13,7 @@ import Skills from "./Pages/MySkills.jsx";
 import Contact from "./Pages/ContactMe.jsx";
 import Navigation from "./components/nav.jsx";
 import Footer from "./components/Footer.jsx";
+import SmartCoasterWithFriends from "./Pages/SmartCoasterWithFriendsPage.tsx";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/SCWFPage" element={<SmartCoasterWithFriends />}></Route>
+
           <Route path="/" element={<Portfolio />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/contact" element={<Contact />}></Route>

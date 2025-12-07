@@ -1,31 +1,43 @@
 import React from "react";
+import {
+  Title,
+  Subtitle,
+  Description,
+  OverlayDescription,
+  technologies as Technologies,
+  ImageSrc,
+  Link,
+} from "./cardProps.tsx";
 
 interface CardProps {
-  title: React.ReactNode;
-  subtitle: React.ReactNode;
-  imageSrc: React.ReactNode;
-  link: React.ReactNode;
-  description: React.ReactNode;
-  overlayDescription: React.ReactNode;
-  technologies: React.ReactNode;
+  title: string;
+  image: string;
+  description: string;
+  link: string;
+  subtitle?: string;
+  overlayDescription?: string;
+  technologies?: string;
 }
+
 //Using Dependancy Injection to inject in the image, title, ect.
 export const Card = ({
   title,
-  subtitle,
-  imageSrc,
-  link,
+  image,
   description,
+  link,
+  subtitle,
   overlayDescription,
   technologies,
 }: CardProps) => {
   return (
     <div className="projects-portfolio-card">
-      {imageSrc}
-      {subtitle}
-      {link}
-      {description}
-      {technologies}
+      <ImageSrc imageSrc={image} />
+      <div className="projects-portfolio-info">
+        {subtitle && <Subtitle text={subtitle} />}
+        {overlayDescription && <OverlayDescription text={overlayDescription} />}
+        {technologies && <Technologies text={technologies} />}
+        <Link link={title} linkURL={link} />
+      </div>
     </div>
   );
 };

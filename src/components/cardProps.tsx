@@ -19,7 +19,7 @@ export const technologies = ({ text }: { text: string }) => {
 };
 
 export const ImageSrc = ({ imageSrc }: { imageSrc: string }) => {
-  return <img className="image" src={imageSrc} />;
+  return <img className="image" src={imageSrc} alt={imageSrc} />;
 };
 export const Link = ({ link, linkURL }: { link: string; linkURL: string }) => {
   return (

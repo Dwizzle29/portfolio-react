@@ -23,12 +23,12 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
   children,
   scrollContainerRef,
   enableBlur = true,
-  baseOpacity = 0.1,
+  baseOpacity = 1,
   baseRotation = 3,
-  blurStrength = 4,
+  blurStrength = 2,
   containerClassName = "",
   textClassName = "",
-  rotationEnd = "bottom bottom",
+  rotationEnd = "top top",
   wordAnimationEnd = "bottom bottom",
 }) => {
   // changed to div to handle generic wrappers
