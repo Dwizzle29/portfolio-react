@@ -11,6 +11,9 @@ import Plasma from "../components/Plasma.tsx";
 import SplitText from "../components/SplitTextProps.tsx";
 import Iridescence from "../components/Iridescence.tsx";
 import ScrollReveal from "../components/ScrollRevealProp.tsx";
+import ScrollStack, {
+  ScrollStackItem,
+} from "../components/ScrollStackProps.tsx";
 
 export default function Portfolio() {
   const handleAnimationComplete = () => {
@@ -19,7 +22,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className="main-content">
+      <section>
         <div className="liquid-ether-wrapper">
           <div className="liquid-ether-canvas">
             <Iridescence
@@ -54,50 +57,63 @@ export default function Portfolio() {
           baseOpacity={90}
           enableBlur={true}
           baseRotation={0}
-          blurStrength={1}
+          blurStrength={0.5}
           rotationEnd="top bottom"
         >
-          <h1>Featured Work</h1>
-          <article className="portfolio-container">
-            <div className="projects-portfolio-container">
-              <Card
-                image={smartCoasterWithFriends}
-                title="Smart Coaster With Friends"
-                description="An IoT-enabled smart coaster system for friends to track water consumption, receive reminders, and interact via Discord."
-                link="SCWFPage"
-              />
-              <Card
-                image={screenjot}
-                title="ScreenJot"
-                description="A note-taking app that allows users to capture screenshots and annotate them with text, drawings, and highlights."
-                link="https://screenjot.app/"
-              />
-              <Card
-                image={mikaylascorner}
-                title="Mikayla's Corner"
-                description="A personal blog where I share my thoughts on web development, design, and my journey as a developer."
-                link="https://mikaylascorner.com/"
-              />
-              <Card
-                image={teamjacobvolleyball}
-                title="Team Jacob Volleyball"
-                description="A community platform for volleyball enthusiasts to connect, share tips, and organize local games and tournaments."
-                link="https://teamjacobvolleyball.com/"
-              />
-              <Card
-                image={harmonivinyls}
-                title="Harmoni Vinyls"
-                description="An e-commerce site specializing in vintage vinyl records, offering a curated selection for collectors and music lovers."
-                link="https://harmonivinyls.com/"
-              />
-              <Card
-                image={comingsoon}
-                title="Project Coming Soon"
-                description="Stay tuned for my next exciting project! More details will be revealed soon."
-                link="#"
-              />
-            </div>
-          </article>
+          <div className="main-content">
+            <h1>Featured Work</h1>
+            <ScrollStack>
+              <ScrollStackItem>
+                <p>This is one</p>
+              </ScrollStackItem>
+              <ScrollStackItem>
+                <p>This is one</p>
+              </ScrollStackItem>
+              <ScrollStackItem>
+                <p>This is one</p>
+              </ScrollStackItem>
+              {/* <ScrollStackItem>
+                <Card
+                  image={screenjot}
+                  title="ScreenJot"
+                  description="A note-taking app that allows users to capture screenshots and annotate them with text, drawings, and highlights."
+                  link="https://musical-travesseiro-1382ec.netlify.app"
+                />
+              </ScrollStackItem>
+              <ScrollStackItem>
+                <Card
+                  image={mikaylascorner}
+                  title="Mikayla's Corner"
+                  description="A personal blog where I share my thoughts on web development, design, and my journey as a developer."
+                  link="https://mikayladwyerabout.netlify.app"
+                />
+              </ScrollStackItem>
+              <ScrollStackItem>
+                <Card
+                  image={teamjacobvolleyball}
+                  title="Team Jacob Volleyball"
+                  description="Idea was created in a Design Class which I expanded into a function website for a local volleyball team to manage schedules and player info."
+                  link="https://teamjacobvolleyball.netlify.app"
+                />
+              </ScrollStackItem>
+              <ScrollStackItem>
+                <Card
+                  image={harmonivinyls}
+                  title="Harmoni Vinyls"
+                  description="Initial idea was developed within a design class were I expanded into a function website as an e-commerce site specializing in vintage vinyl records, offering a curated selection for collectors and music lovers."
+                  link="https://harmonivinyls.netlify.app/"
+                />
+              </ScrollStackItem>
+              <ScrollStackItem>
+                <Card
+                  image={comingsoon}
+                  title="Project Coming Soon"
+                  description="Stay tuned for my next exciting project! More details will be revealed soon."
+                  link="#"
+                />
+              </ScrollStackItem> */}
+            </ScrollStack>
+          </div>
         </ScrollReveal>
       </section>
     </>

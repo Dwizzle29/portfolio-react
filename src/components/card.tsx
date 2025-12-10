@@ -33,10 +33,13 @@ export const Card = ({
     <div className="projects-portfolio-card">
       <ImageSrc imageSrc={image} />
       <div className="projects-portfolio-info">
-        {subtitle && <Subtitle text={subtitle} />}
-        {overlayDescription && <OverlayDescription text={overlayDescription} />}
-        {technologies && <Technologies text={technologies} />}
+        <Title text={title} />
+        {(overlayDescription || description) && (
+          <OverlayDescription text={overlayDescription || description} />
+        )}
         <Link link={title} linkURL={link} />
+        {technologies && <Technologies text={technologies} />}
+        {subtitle && <Subtitle text={subtitle} />}
       </div>
     </div>
   );

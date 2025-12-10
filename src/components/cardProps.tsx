@@ -23,8 +23,10 @@ export const ImageSrc = ({ imageSrc }: { imageSrc: string }) => {
 };
 export const Link = ({ link, linkURL }: { link: string; linkURL: string }) => {
   return (
-    <a className="link" href={linkURL}>
-      {link}
-    </a>
+    <p className="projects-portfolio-info">
+      <a className="link" href={linkURL}>
+        {link}
+      </a>
+    </p>
   );
 };

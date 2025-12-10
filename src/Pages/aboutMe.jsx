@@ -4,7 +4,6 @@ export default function About() {
   return (
     <>
       <section className="main-content">
-        <h1>About section</h1>
         <div className="rotating-text-container">
           <h1>Bridging: </h1>
           <div className="rotating-text-wrapper">
@@ -35,13 +34,22 @@ export default function About() {
         </div>
         <article className="about-container">
           <p>
-            Hi! My names Mikayla Dwyer and I'm currently a Swinburne University
-            of Technology student. <br />I work part-time at a Automation and
-            Software Engineering company as a Trainee Systems Control Software
-            Developer where I have learnt so many valuable skills.
+            Hi! My names Mikayla Dwyer and I'm a recent Graduate with a
+            Bachelors of Computer Science majoring in Software Development with
+            a minor in UX Interaction Design. Currently I work part-time at a
+            Automation and Software Engineering company as a Junior
+            Software/Control Systems Engineer where I am continuously learning
+            new skills and collaborating with an engineering team.
           </p>
           <h3>Study/Qualifications</h3>
           <ol>
+            <li>
+              <p>
+                Swinburne University of Technology – Bachelor of Computer
+                Science majoring in Software Development and minoring in UX
+                Interaction Design | Current GPA - 3.19| 2022 - 2025
+              </p>
+            </li>
             <li>
               <p>
                 Box Hill Institute - Certificate II in Animal Studies | 2020
@@ -51,13 +59,6 @@ export default function About() {
               <p>
                 Yarra Valley Grammar – Victoria Certificate of Education (VCE) |
                 2020
-              </p>
-            </li>
-            <li>
-              <p>
-                Swinburne University of Technology – Bachelor of Computer
-                Science majoring in Software Development and minoring in UX
-                Interaction Design | Current GPA - 2.83 | 2022 - Present
               </p>
             </li>
           </ol>

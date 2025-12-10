@@ -2,8 +2,9 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #77d7d587;
-  color: rgba(47, 55, 89, 0.548);
+  background-color: rgba(46, 110, 248, 0.665);
+  color: #e5eaea;
+
   text-align: center;
   margin-top: 20px;
   min-height: 50px;
