@@ -1,3 +1,5 @@
+import React from "react";
+
 export const Title = ({ text }: { text: string }) => {
   return <h1 className="title projects-portfolio-info">{text}</h1>;
 };

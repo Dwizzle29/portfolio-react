@@ -1,4 +1,5 @@
 import RotatingText from "../components/RoatatingTextProp.tsx";
+import React from "react";
 
 export default function About() {
   return (

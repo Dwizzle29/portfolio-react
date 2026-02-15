@@ -14,7 +14,7 @@ import Contact from "./Pages/ContactMe.jsx";
 import Navigation from "./components/nav.jsx";
 import Footer from "./components/Footer.jsx";
 import SmartCoasterWithFriends from "./Pages/SmartCoasterWithFriendsPage.tsx";
-
+import React from "react";
 function App() {
   return (
     <Router>
