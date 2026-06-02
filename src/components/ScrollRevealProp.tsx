@@ -28,7 +28,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
   blurStrength = 2,
   containerClassName = "",
   textClassName = "",
-  rotationEnd = "top top",
+  rotationEnd = "top bottom",
   wordAnimationEnd = "bottom bottom",
 }) => {
   // changed to div to handle generic wrappers
