@@ -61,18 +61,32 @@ export default function Portfolio() {
           rotationEnd="top bottom"
         >
           <div className="main-content">
-            <h1>Featured Work</h1>
-            <ScrollStack>
-              <ScrollStackItem>
-                <p>This is one</p>
-              </ScrollStackItem>
-              <ScrollStackItem>
-                <p>This is one</p>
-              </ScrollStackItem>
-              <ScrollStackItem>
-                <p>This is one</p>
-              </ScrollStackItem>
-              {/* <ScrollStackItem>
+            <div className="scroll-stack-card">
+              <h2 className="scroll-text">Featured Work</h2>
+              <ScrollStack
+                baseScale={0.85}
+                itemDistance={10}
+                itemScale={0.04}
+                itemStackDistance={20}
+                stackPosition={20}
+                scaleEndPosition={20}
+                scaleDuration={0.5}
+                blurAmount={0.5}
+              >
+                <ScrollStackItem>
+                  <p>This is one</p>
+                  <p>This is the first card in the stack</p>
+                </ScrollStackItem>
+                <ScrollStackItem>
+                  <p>This is one</p>
+                  <p>Ts</p>
+                </ScrollStackItem>
+                <ScrollStackItem>
+                  <p>This is one</p>
+                  <p>Tsad</p>
+                </ScrollStackItem>
+
+                {/* <ScrollStackItem>
                 <Card
                   image={screenjot}
                   title="ScreenJot"
@@ -112,7 +126,8 @@ export default function Portfolio() {
                   link="#"
                 />
               </ScrollStackItem> */}
-            </ScrollStack>
+              </ScrollStack>
+            </div>
           </div>
         </ScrollReveal>
       </section>
