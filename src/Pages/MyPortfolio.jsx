@@ -14,6 +14,7 @@ import ScrollReveal from "../components/ScrollRevealProp.tsx";
 import ScrollStack, {
   ScrollStackItem,
 } from "../components/ScrollStackProps.tsx";
+import React from "react";
 
 export default function Portfolio() {
   const handleAnimationComplete = () => {
